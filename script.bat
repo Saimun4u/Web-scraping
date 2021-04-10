@@ -1,0 +1,1 @@
+@py.exe C:\Users\Saimun\Python ardit\web scraping with python\script.py %*
