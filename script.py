@@ -70,8 +70,25 @@ browser = webdriver.Firefox()
 
 browser.get('https://www.cse.com.bd/')
 
-elem = browser.find_element_by_css_selector('div.col_b_link:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)')
+# elem = browser.find_element_by_css_selector('div.col_b_link:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)')
 
-elem.click()
+# elem.click()
+
+elemSelectBroker = browser.find_element_by_css_selector('div.col_b_link:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)')
+
+elemSelectBroker.click()
+
+elemBrokerCode = browser.find_element_by_css_selector('#broker')
+
+elemBrokerCode.send_keys('006')
+
+elemSearch = browser.find_element_by_css_selector('#submit2')
+
+elemSearch.click()
+
+
+
+
+
 
 
