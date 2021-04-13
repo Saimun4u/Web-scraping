@@ -68,8 +68,10 @@ driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 
 browser = webdriver.Firefox()
 
-browser.get('https://mail.cse.com.bd/mail/')
+browser.get('https://www.cse.com.bd/')
 
+elem = browser.find_element_by_css_selector('div.col_b_link:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1)')
 
+elem.click()
 
 
