@@ -1,10 +1,10 @@
-import webbrowser, sys, pyperclip
+# import webbrowser, sys, pyperclip
 
 # Address to be copied
 # https://www.google.ca/maps/place/739+Gerrard+St+E,+Toronto
 
 
-sys.argv  # ['script.py', '739', 'Gerrard', 'St', 'E', 'Toronto']
+# sys.argv  # ['script.py', '739', 'Gerrard', 'St', 'E', 'Toronto']
 
 # if len(sys.argv) > 1:
 #     address = ' '.join(sys.argv[1:])
@@ -57,6 +57,19 @@ sys.argv  # ['script.py', '739', 'Gerrard', 'St', 'E', 'Toronto']
 # price = getDarazPrice('https://www.daraz.com.bd/products/amazfit-gtr-2-amoled-curved-display-classic-stainless-steel-global-version-silver-i163490760-s1096062719.html?spm=a2a0e.searchlist.list.1.26273b1a3CPUoC&search=1')
 
 
-import selenium
+from selenium import webdriver
+
+from selenium import webdriver
+
+
+from webdriver_manager.firefox import GeckoDriverManager
+
+driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+
+browser = webdriver.Firefox()
+
+browser.get('https://mail.cse.com.bd/mail/')
+
+
 
 
